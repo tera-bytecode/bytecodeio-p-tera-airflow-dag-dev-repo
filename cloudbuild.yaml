@@ -6,5 +6,5 @@ steps:
             '-J',
             '-x',
             '.*\.pyc',
-            'de',
-            'gs://${_BUCKET}/dags/de' ]
+            # 'de',
+            'gs://${_BUCKET}/dags' ]
