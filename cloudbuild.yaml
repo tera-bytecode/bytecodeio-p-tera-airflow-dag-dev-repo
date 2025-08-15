@@ -8,3 +8,5 @@ steps:
             '.*\.pyc',
             # 'de',
             'gs://${_BUCKET}/dags' ]
+options:
+  logging: CLOUD_LOGGING_ONLY
