@@ -1,0 +1,10 @@
+steps:
+  - name: gcr.io/cloud-builders/gsutil
+    args: [ 'rsync',
+            '-r',
+            '-c',
+            '-J',
+            '-x',
+            '.*\.pyc',
+            'de',
+            'gs://${_BUCKET}/dags/de' ]
